@@ -53,8 +53,8 @@ body {
 /* --------------- 4.1 Header ------------------------- */
 
 .outer-box-header {
-    background: rgb(75,73,232);
-    background: linear-gradient(90deg, rgba(75,73,232,1) 0%, rgba(87,34,205,1) 75%);
+    background: rgb(75, 73, 232);
+    background: linear-gradient(90deg, rgba(75, 73, 232, 1) 0%, rgba(87, 34, 205, 1) 75%);
     color: #FFFFFF;
 
     display: flex;
@@ -130,7 +130,7 @@ li a:visited {
     border-radius: 50px;
     text-transform: uppercase;
     background: #ED4385;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.30);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.30);
 }
 
 .heading-button a:link {
@@ -148,6 +148,7 @@ li a:visited {
     bottom: 0;
     left: calc(50% - 25px);
 }
+
 /* --------------- 4.2 Introduction ------------------- */
 .outer-box-intro {
     background-color: #FFFFFF;
@@ -185,7 +186,7 @@ li a:visited {
 }
 
 .intro-link {
-    color:#0C0C0C;
+    color: #0C0C0C;
     padding-top: 50px;
 }
 
@@ -197,4 +198,80 @@ li a:visited {
 .intro-link a:visited {
     color: #0C0C0C;
 }
+
+/* --------------- 4.3 Projects ------------------- */
+
+.outer-box-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background: #F3F6F9;
+    border: 5px solid black;
+}
+
+.inner-box-all-projects {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1400px;
+
+    margin: 10px 10px;
+    border: 5px solid black;
+}
+
+.inner-box-projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 300px;
+    /*height: 300px;*/
+
+    padding: 20px;
+    border: 5px solid black;
+}
+
+.inner-box-projects:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-basis: 400px;
+    height: 300px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    padding: 10px;
+    border: 5px solid black;
+
+}
+.image-wrapper img {
+    width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 700px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.projects a:link {
+    color: #4B49E8;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.projects a:visited {
+    color: #4B49E8;
+}
+
+/* --------------- 4.3 Projects ------------------- */
+
+
+
+
 /* ------------------------------- 5. Media Queries -------------------------------- */
