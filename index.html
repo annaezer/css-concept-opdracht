@@ -159,30 +159,36 @@
         </div>
     </section>
 
-    <section>
+    <section class="outer-box-contact">
 
-        <div>
-            <h1 id="contact-form">Let's work together</h1>
-            <p>Have a question? Need a quote? Let us know!</p>
+        <div class="inner-box-contact">
+            <div class="inner-inner-box-contact">
+                <h1 id="contact-form">Let's work together</h1>
+                <p>Have a question? Need a quote? Let us know!</p>
 
-            <form>
-                <label>Name</label>
-                <input/>
+                <form>
+                    <div class="contact-form">
+                        <label for="name-field">Name</label>
+                        <input class="input-field" type="text" placeholder="Name" id="name-field" name="name"/>
 
-                <label>Email</label>
-                <input/>
+                        <label for="email-field">Email</label>
+                        <input class="input-field" type="email" placeholder="Email" id="email-field" name="email"/>
 
-                <label>Message</label>
-                <input/>
+                        <label for="message-field">Message </label>
+                        <textarea class="input-field" name="message" id="message-field" placeholder="Message" cols="1"
+                                  rows="10"></textarea>
 
-                <button>SEND</button>
-            </form>
+                        <button class="button-form" type="submit">SEND</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
     </section>
 
-    <footer>Business website opdracht © NOVI Hogeschool 2022</footer>
-
+    <div class="outer-box-footer">
+        <footer id="inner-box-footer">Business website opdracht © NOVI Hogeschool 2022</footer>
+    </div>
 
 </main>
 
