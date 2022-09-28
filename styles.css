@@ -417,3 +417,30 @@ li a:visited {
 }
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media screen and (max-width: 576px) {
+    .headings {
+        width: 100%;
+        flex-basis:450px;
+        padding: 10px;
+    }
+
+    .intro {
+        width: 100%;
+        flex-basis: 450px;
+        padding: 10px;
+    }
+
+    .inner-box-projects {
+        flex-direction: column-reverse;
+        /*margin: 0;*/
+        /*padding: 0;*/
+    }
+    .inner-box-projects:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+
+    .image-wrapper {
+       flex-basis: auto;
+    }
+}
